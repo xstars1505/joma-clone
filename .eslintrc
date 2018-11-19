@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "import",
+    "vue"
+  ],
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/airbnb"
+  ],
+  "rules": {
+    "no-param-reassign": ["error", {
+      "ignorePropertyModificationsFor": [
+        "state", // for vuex state
+        "acc", // for reduce accumulators
+        "e" // for e.returnvalue
+      ]
+    }],
+    "import/extensions": ["off", "always", {
+      "js": "never",
+      "vue": "never"
+    }],
+    "no-shadow": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
