@@ -2,7 +2,8 @@
   <v-container
     class="text-md-center nav-menu pa-2"
     row>
-    <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
+
+    <app-nav-drawer v-bind:mainMenus="mainMenus"></app-nav-drawer>
     <v-menu
       offset-y
       open-on-hover
@@ -26,7 +27,7 @@
               :key="index"
               v-bind:data="menuBlockData"
               v-bind:index="index"/>
-            <app-menu-generic-group />
+            <!-- <app-menu-generic-group /> -->
           </v-layout>
         </v-container>
     </v-menu>
@@ -36,116 +37,17 @@
 
 import MenuGeneric from '../shared-components/Menu/MenuGeneric';
 import MenuGenericGroup from '../shared-components/Menu/MenuGenericGroup';
+import NavigationDrawer from '../shared-components/Menu/NavigationDrawer';
+import menuData from '../data-example/main-menu.json';
 
 export default {
   data: () => ({
-    mainMenus: [
-      {
-        id: 1,
-        title: 'handbags',
-        menuBlocks: [
-          {
-            id: 1,
-            title: 'handbags',
-            items: [
-              {
-                name: 'Briefcases',
-                link: '#',
-              },
-              {
-                name: 'Clutches',
-                link: '#',
-              },
-              {
-                name: 'Cosmetic',
-                link: '#',
-              },
-              {
-                name: 'Crossbody',
-                link: '#',
-              },
-              {
-                name: 'Briefcases',
-                link: '#',
-              },
-              {
-                name: 'Clutches',
-                link: '#',
-              },
-              {
-                name: 'Cosmetic',
-                link: '#',
-              },
-              {
-                name: 'Crossbody',
-                link: '#',
-              },
-              {
-                name: 'Briefcases',
-                link: '#',
-              },
-            ],
-          },
-          {
-            id: 2,
-            title: 'Watches by Style',
-            items: [
-              {
-                name: 'Briefcases',
-                link: '#',
-              },
-              {
-                name: 'Clutches',
-                link: '#',
-              },
-            ],
-          },
-          {
-            id: 3,
-            title: 'handbags',
-            items: [
-              {
-                name: 'Briefcases',
-                link: '#',
-              },
-              {
-                name: 'Clutches',
-                link: '#',
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id: 2,
-        title: 'watches',
-        menuBlocks: [],
-      },
-      {
-        id: 3,
-        title: 'men\'s',
-        menuBlocks: [],
-      },
-      {
-        id: 4,
-        title: 'ladies',
-        menuBlocks: [],
-      },
-      {
-        id: 5,
-        title: 'sunglasses',
-        menuBlocks: [],
-      },
-      {
-        id: 6,
-        title: 'jewelry',
-        menuBlocks: [],
-      },
-    ],
+    ...menuData,
   }),
   components: {
     'app-menu-generic': MenuGeneric,
     'app-menu-generic-group': MenuGenericGroup,
+    'app-nav-drawer': NavigationDrawer,
   },
 };
 </script>
@@ -175,5 +77,10 @@ export default {
   background-color: #f3f4f6;
   min-height: 350px;
   padding: 10px 30px;
+}
+
+.navigation-drawer--mini-variant {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 </style>
