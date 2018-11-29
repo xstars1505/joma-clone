@@ -20,23 +20,21 @@
           </div>
         </div>
 
-         <v-container py-0>
-          <v-layout row wrap>
+        <v-container py-0>
+          <v-layout class="menu-generic-layout">
             <app-menu-generic
               v-for="(menuBlockData, index) in mainMenu.menuBlocks"
               :key="index"
               v-bind:data="menuBlockData"
               v-bind:index="index"/>
-            <!-- <app-menu-generic-group /> -->
           </v-layout>
         </v-container>
-    </v-menu>
+      </v-menu>
   </v-container>
 </template>
 <script>
 
 import MenuGeneric from '../shared-components/Menu/MenuGeneric';
-import MenuGenericGroup from '../shared-components/Menu/MenuGenericGroup';
 import NavigationDrawer from '../shared-components/Menu/NavigationDrawer';
 import menuData from '../data-example/main-menu.json';
 
@@ -46,7 +44,6 @@ export default {
   }),
   components: {
     'app-menu-generic': MenuGeneric,
-    'app-menu-generic-group': MenuGenericGroup,
     'app-nav-drawer': NavigationDrawer,
   },
 };
@@ -70,13 +67,19 @@ export default {
   }
 }
 
+.menu-generic-layout {
+  display: flex;
+  flex-flow:column wrap;
+  height: 350px;
+}
+
 .menu-item-content {
   max-width: 100%;
   width: 100%;
   left: 0px !important;
   background-color: #f3f4f6;
-  min-height: 350px;
   padding: 10px 30px;
+  height: 350px;
 }
 
 .navigation-drawer--mini-variant {

@@ -1,5 +1,5 @@
 <template>
-  <v-content class="mx-4 my-3 d-inline-flex">
+  <v-content class="my-3">
     <div class="title font-weight-medium mb-2 text-capitalize body-2">{{ data.title }}</div>
     <v-container fluid grid-list-sm pa-0>
       <v-layout column wrap fill-height>
@@ -24,8 +24,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .v-content {
-  display: inline-block;
-  width: 120px;
+  display: inline-table;
+  width: 150px;
 }
 
 .item-name-text {

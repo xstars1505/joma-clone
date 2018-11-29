@@ -50,35 +50,7 @@
               "link": "#"
             },
             {
-              "name": "Michael Kors",
-              "link": "#"
-            },
-            {
-              "name": "Movado",
-              "link": "#"
-            },
-            {
-              "name": "Omega",
-              "link": "#"
-            },
-            {
-              "name": "Panerai",
-              "link": "#"
-            },
-            {
-              "name": "Rolex",
-              "link": "#"
-            },
-            {
-              "name": "Seiko",
-              "link": "#"
-            },
-            {
-              "name": "Tag Heuer",
-              "link": "#"
-            },
-            {
-              "name": "Tissot",
+              "name": "View all Brands (A-Z)",
               "link": "#"
             }
           ]
@@ -108,6 +80,112 @@
             {
               "name": "Clutches",
               "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
             }
           ]
         }
@@ -121,46 +199,6 @@
           "id": 1,
           "title": "Featured Brands",
           "items": [
-            {
-              "name": "Baume & Mercier",
-              "link": "#"
-            },
-            {
-              "name": "Breitling",
-              "link": "#"
-            },
-            {
-              "name": "CosCartiermetic",
-              "link": "#"
-            },
-            {
-              "name": "Citizen",
-              "link": "#"
-            },
-            {
-              "name": "Fossil",
-              "link": "#"
-            },
-            {
-              "name": "Frederique Constant",
-              "link": "#"
-            },
-            {
-              "name": "Hublot",
-              "link": "#"
-            },
-            {
-              "name": "Invicta",
-              "link": "#"
-            },
-            {
-              "name": "BriIWCefcases",
-              "link": "#"
-            },
-            {
-              "name": "Michael Kors",
-              "link": "#"
-            },
             {
               "name": "Movado",
               "link": "#"
@@ -251,7 +289,188 @@
     {
       "id": 3,
       "title": "ladies",
-      "menuBlocks": []
+      "menuBlocks": [
+        {
+          "id": 1,
+          "title": "Featured Brands",
+          "items": [
+            {
+              "name": "Baume & Mercier",
+              "link": "#"
+            },
+            {
+              "name": "Breitling",
+              "link": "#"
+            },
+            {
+              "name": "CosCartiermetic",
+              "link": "#"
+            },
+            {
+              "name": "Citizen",
+              "link": "#"
+            },
+            {
+              "name": "Fossil",
+              "link": "#"
+            },
+            {
+              "name": "Frederique Constant",
+              "link": "#"
+            },
+            {
+              "name": "Hublot",
+              "link": "#"
+            },
+            {
+              "name": "Invicta",
+              "link": "#"
+            },
+            {
+              "name": "BriIWCefcases",
+              "link": "#"
+            },
+            {
+              "name": "View all Brands (A-Z)",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Watches by Style",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Watch Accessories",
+          "items": [
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "Briefcases",
+              "link": "#"
+            },
+            {
+              "name": "Clutches",
+              "link": "#"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
