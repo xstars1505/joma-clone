@@ -1,16 +1,14 @@
 <template>
-  <v-container
-    class="text-md-center nav-menu pa-2"
-    row>
-
+  <div class="text-md-center nav-menu pa-2" row>
     <app-nav-drawer v-bind:mainMenus="mainMenus"></app-nav-drawer>
     <v-menu
       offset-y
       open-on-hover
       v-for="mainMenu in mainMenus"
       :key="mainMenu.id"
-      class="menu-item hidden-sm-and-down"
+      class="menu-item hidden-sm-and-down row"
       content-class="menu-item-content"
+      close-delay='150'
       >
         <div
           slot="activator"
@@ -21,16 +19,16 @@
         </div>
 
         <v-container py-0>
-          <v-layout class="menu-generic-layout">
+          <div class="menu-generic-layout">
             <app-menu-generic
               v-for="(menuBlockData, index) in mainMenu.menuBlocks"
               :key="index"
-              v-bind:data="menuBlockData"
+              v-bind:menuBlockData="menuBlockData"
               v-bind:index="index"/>
-          </v-layout>
+          </div>
         </v-container>
       </v-menu>
-  </v-container>
+  </div>
 </template>
 <script>
 
@@ -54,9 +52,6 @@ export default {
   .title-wrapper {
     .title-text {
       border-bottom: 2px solid #fafafa;
-      &:hover {
-        border-bottom: 2px solid #353535;
-      }
       text-align: center;
       font-weight: 600;
       font-size: 15px;
@@ -79,11 +74,18 @@ export default {
   left: 0px !important;
   background-color: #f3f4f6;
   padding: 10px 30px;
-  height: 350px;
+  height: 400px;
 }
 
 .navigation-drawer--mini-variant {
   overflow-x: hidden;
   overflow-y: auto;
+}
+.v-menu__activator--active {
+  .title-wrapper {
+    .title-text {
+      border-bottom: 2px solid #353535;
+    }
+  }
 }
 </style>

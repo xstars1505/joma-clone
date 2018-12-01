@@ -12,6 +12,8 @@
         {
           "id": 1,
           "title": "Featured Brands",
+          "isDouble": false,
+          "viewAllLink": "#",
           "items": [
             {
               "name": "Baume & Mercier",
@@ -47,10 +49,6 @@
             },
             {
               "name": "BriIWCefcases",
-              "link": "#"
-            },
-            {
-              "name": "View all Brands (A-Z)",
               "link": "#"
             }
           ]
@@ -198,13 +196,49 @@
         {
           "id": 1,
           "title": "Featured Brands",
+          "isDouble": true,
+          "viewAllLink": "#",
           "items": [
             {
-              "name": "Movado",
+              "name": "BriIWCefcases",
               "link": "#"
             },
             {
-              "name": "Omega",
+              "name": "Panerai",
+              "link": "#"
+            },
+            {
+              "name": "Rolex",
+              "link": "#"
+            },
+            {
+              "name": "Seiko",
+              "link": "#"
+            },
+            {
+              "name": "Tag Heuer",
+              "link": "#"
+            },
+            {
+              "name": "Tissot",
+              "link": "#"
+            },{
+              "name": "BriIWCefcases",
+              "link": "#"
+            },
+            {
+              "name": "Panerai",
+              "link": "#"
+            },{
+              "name": "BriIWCefcases",
+              "link": "#"
+            },
+            {
+              "name": "Panerai",
+              "link": "#"
+            },
+            {
+              "name": "BriIWCefcases",
               "link": "#"
             },
             {
@@ -239,6 +273,22 @@
             },
             {
               "name": "Clutches",
+              "link": "#"
+            },
+            {
+              "name": "BriIWCefcases",
+              "link": "#"
+            },
+            {
+              "name": "Panerai",
+              "link": "#"
+            },
+            {
+              "name": "Rolex",
+              "link": "#"
+            },
+            {
+              "name": "Seiko",
               "link": "#"
             }
           ]
@@ -282,7 +332,84 @@
           {
             "name": "Clutches",
             "link": "#"
-          }]
+          },
+          {
+            "name": "BriIWCefcases",
+            "link": "#"
+          },
+          {
+            "name": "Panerai",
+            "link": "#"
+          },
+          {
+            "name": "Rolex",
+            "link": "#"
+          },
+          {
+            "name": "Seiko",
+            "link": "#"
+          },
+          {
+            "name": "BriIWCefcases",
+            "link": "#"
+          },
+          {
+            "name": "Panerai",
+            "link": "#"
+          },
+          {
+            "name": "Rolex",
+            "link": "#"
+          },
+          {
+            "name": "Seiko",
+            "link": "#"
+          }
+        ]
+        },{
+          "id": 5,
+          "title": "Cologne",
+          "items": [{
+            "name": "Briefcases",
+            "link": "#"
+          },
+          {
+            "name": "Clutches",
+            "link": "#"
+          },
+          {
+            "name": "BriIWCefcases",
+            "link": "#"
+          },
+          {
+            "name": "Panerai",
+            "link": "#"
+          },
+          {
+            "name": "Rolex",
+            "link": "#"
+          },
+          {
+            "name": "Seiko",
+            "link": "#"
+          },
+          {
+            "name": "BriIWCefcases",
+            "link": "#"
+          },
+          {
+            "name": "Panerai",
+            "link": "#"
+          },
+          {
+            "name": "Rolex",
+            "link": "#"
+          },
+          {
+            "name": "Seiko",
+            "link": "#"
+          }
+        ]
         }
       ]
     },
@@ -328,10 +455,6 @@
             },
             {
               "name": "BriIWCefcases",
-              "link": "#"
-            },
-            {
-              "name": "View all Brands (A-Z)",
               "link": "#"
             }
           ]
