@@ -6,19 +6,19 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "yarn run build && node server.js"
+    "start": "vue-cli-service build && node server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
     "serve-static": "^1.13.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "@vue/cli-service": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-airbnb": "^3.0.5",
     "lint-staged": "^7.2.2",
     "node-sass": "^4.9.0",
