@@ -5,7 +5,7 @@
 
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      fixed
       temporary
     >
       <!-- Main menu lv1 -->
@@ -66,16 +66,11 @@ export default {
   methods: {
     toggleDrawer() {
       this.drawer = !this.drawer;
-
-      // fix drawer does not scroll in overflow case
-      if (this.drawer) {
-        document.scrollingElement.style.overflow = 'scroll';
-      }
     },
   },
 };
 </script>
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 .menu-title {
   font-size: 14px;
   font-weight: normal;

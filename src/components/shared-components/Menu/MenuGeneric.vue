@@ -1,5 +1,8 @@
 <template>
-  <v-content class="my-3" v-bind:class="{ 'double-layout': menuBlockData.isDouble }" >
+  <v-content
+    class="my-3 single-layout"
+    v-bind:class="{ 'double-layout': menuBlockData.isDouble }"
+  >
     <div
       class="title font-weight-medium mb-2 text-capitalize body-2"
     >
@@ -32,8 +35,8 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-.v-content {
+<style lang='scss' scoped>
+.single-layout {
   display: block;
   width: 140px;
 }
@@ -52,10 +55,5 @@ export default {
     cursor: pointer;
     border-bottom: 2px solid #353535;
   }
-}
-
-.double-layout {
-  display: flex;
-  width: 300px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="text-md-center nav-menu pa-2" row>
-    <app-nav-drawer v-bind:mainMenus="mainMenus"></app-nav-drawer>
+    <app-nav-drawer :mainMenus="mainMenus"></app-nav-drawer>
     <v-menu
       offset-y
       open-on-hover
@@ -23,8 +23,8 @@
             <app-menu-generic
               v-for="(menuBlockData, index) in mainMenu.menuBlocks"
               :key="index"
-              v-bind:menuBlockData="menuBlockData"
-              v-bind:index="index"/>
+              :menuBlockData="menuBlockData"
+              :index="index"/>
           </div>
         </v-container>
       </v-menu>
@@ -34,7 +34,7 @@
 
 import MenuGeneric from '../shared-components/Menu/MenuGeneric';
 import NavigationDrawer from '../shared-components/Menu/NavigationDrawer';
-import menuData from '../data-example/main-menu.json';
+import menuData from '../../data-example/main-menu.json';
 
 export default {
   data: () => ({

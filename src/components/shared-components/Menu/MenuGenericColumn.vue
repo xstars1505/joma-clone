@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 .double-layout {
   display: flex;
   flex-flow: column wrap;
