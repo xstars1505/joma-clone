@@ -3,6 +3,7 @@
     <!--Carousel-->
     <section>
       <v-btn @click="load">test</v-btn>
+      <app-menu></app-menu>
       <app-carousel/>
     </section>
 
@@ -80,6 +81,7 @@
 </template>
 
 <script>
+import Menu from '../components/Home/Menu';
 import Carousel from '../components/Home/Carousel';
 import FeatureDaily from '../components/Home/FeatureDaily';
 import Trending from '../components/Home/Trending';
@@ -87,6 +89,7 @@ import customAxios from '../axios/axios';
 
 export default {
   components: {
+    'app-menu': Menu,
     'app-carousel': Carousel,
     'app-feature-daily': FeatureDaily,
     'app-trending': Trending,
