@@ -51,7 +51,7 @@ export default {
 .menu-item {
   .title-wrapper {
     .title-text {
-      border-bottom: 2px solid #fafafa;
+      border-bottom: 2px solid #fff;
       text-align: center;
       font-weight: 600;
       font-size: 15px;

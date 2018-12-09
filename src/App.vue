@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app light class="app">
     <!--Header-->
     <app-header/>
 
@@ -37,3 +37,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.app {
+  background-color: #fff !important;
+}
+</style>
+

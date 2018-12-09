@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <v-btn @click="load">test</v-btn>
     <section>
       <app-header></app-header>
