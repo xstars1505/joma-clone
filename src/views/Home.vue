@@ -1,8 +1,12 @@
 <template>
   <div>
+
+    <v-btn @click="load">test</v-btn>
+    <section>
+      <app-header></app-header>
+    </section>
     <!--Carousel-->
     <section>
-      <v-btn @click="load">test</v-btn>
       <app-menu></app-menu>
       <app-carousel/>
     </section>
@@ -81,6 +85,7 @@
 </template>
 
 <script>
+import Header from '../components/Home/Header';
 import Menu from '../components/Home/Menu';
 import Carousel from '../components/Home/Carousel';
 import FeatureDaily from '../components/Home/FeatureDaily';
@@ -89,6 +94,7 @@ import customAxios from '../axios/axios';
 
 export default {
   components: {
+    'app-header': Header,
     'app-menu': Menu,
     'app-carousel': Carousel,
     'app-feature-daily': FeatureDaily,
