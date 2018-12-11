@@ -1,7 +1,7 @@
 <template>
   <v-layout>
 
-    <v-toolbar-side-icon @click.stop="toggleDrawer" class="hidden-md-and-up"></v-toolbar-side-icon>
+    <v-toolbar-side-icon @click.stop="toggleDrawer" class="hidden-md-and-up toolbar-icon ml-3"></v-toolbar-side-icon>
 
     <v-navigation-drawer
       v-model="drawer"
@@ -58,10 +58,12 @@
 </template>
 
 <script>
+import menuData from '../../../data-example/main-menu.json';
+
 export default {
-  props: ['mainMenus'],
   data: () => ({
     drawer: null,
+    ...menuData,
   }),
   methods: {
     toggleDrawer() {
@@ -91,5 +93,13 @@ export default {
 
 .active-list-sub-menu {
   color: #444;
+}
+
+@media only screen and (max-width: 959px) {
+  .toolbar-icon {
+    .v-icon {
+      font-size: 38px;
+    }
+  }
 }
 </style>

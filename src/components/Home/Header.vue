@@ -1,16 +1,23 @@
 <template>
-  <div>
+  <div class="header-wrapper">
     <div class="top-links-section">
       <v-container d-flex justify-space-between pa-0 fill-height>
-        <v-layout align-center>
+        <v-layout align-center class="hidden-sm-and-down">
           <div class="d-flex align-center px-4 text-uppercase font-italic fill-height content-hover">
             <v-icon class="icon mr-1">forum</v-icon>
             <div>Live chat</div>
           </div>
           <div class="d-inline-block">CALL US (877) 834-1434 | (212) 924-9925</div>
         </v-layout>
-        <v-layout align-center justify-end>
-          <v-menu offset-y open-on-hover class="fill-height" full-width content-class="dropdown-content" nudge-left=2>
+        <v-layout align-center justify-end class="right-menu">
+          <v-menu
+            offset-y
+            open-on-hover
+            full-width
+            content-class="dropdown-content"
+            nudge-left=2
+            class="hidden-sm-and-down"
+          >
             <div slot="activator" class="content-hover dropdown-menu">
               <div>My account</div>
             </div>
@@ -30,14 +37,16 @@
           </v-menu>
           <v-menu
             offset-y open-on-hover
-            class="fill-height" full-width
+            full-width
             left
             content-class="dropdown-content"
             nudge-right=3
-            min-width=300>
+            min-width=300
+            class="shopping-bag"
+          >
               <div slot="activator" class="content-hover dropdown-menu">
-                <div>My shopping bag (1)</div>
-                <v-icon class="icon ml-2">shopping_cart</v-icon>
+                <div class="hidden-sm-and-down">My shopping bag (1)</div>
+                <v-icon class="icon shopping-cart-icon ml-2">shopping_cart</v-icon>
               </div>
               <v-list>
                 <v-list-tile>
@@ -48,20 +57,33 @@
         </v-layout>
       </v-container>
     </div>
-    <v-container grid-list-md>
+
+    <v-container grid-list-md class="shop-title-container">
       <v-layout row wrap>
-        <v-flex d-flex align-center xs4>
-          <div class="roating-item">UP TO 80% OFF DOORBUSTERS. SHOP</div>
+        <v-flex d-flex align-center xs3 md4>
+          <div class="drawer-wrapper">
+            <app-nav-drawer :mainMenus="mainMenus"></app-nav-drawer>
+          </div>
+          <div class="roating-item hidden-sm-and-down">UP TO 80% OFF DOORBUSTERS. SHOP</div>
         </v-flex>
-        <v-flex xs4>
-          <img
+        <v-flex xs6 md4>
+          <v-img
             src="https://cdn.jomashop.com/skin/frontend/enterprise/joma/images/logo.png"
-            max-width=267
-            height=62
-          />
+            aspect-ratio="2"
+            max-height=62
+            contain
+            class="hidden-xs-only"
+          ></v-img>
+          <v-img
+            src="https://cdn.jomashop.com/skin/frontend/enterprise/joma/images/mob-logo.png"
+            aspect-ratio="2"
+            height=20
+            contain
+            class="hidden-sm-and-up mob-logo"
+          ></v-img>
         </v-flex>
-        <v-flex d-flex align-center xs4>
-          <div class="search-box">
+        <v-flex d-flex align-center sm12 xs12 md4>
+          <div class="search-box pl-1">
             <input type="text" class="search-input"
               placeholder="Search by brand or model"
             >
@@ -73,8 +95,12 @@
   </div>
 </template>
 <script>
-export default {
+import NavigationDrawer from '../shared-components/Menu/NavigationDrawer';
 
+export default {
+  components: {
+    'app-nav-drawer': NavigationDrawer,
+  },
 };
 </script>
 
@@ -86,6 +112,13 @@ export default {
   font-weight: 600;
   font-size: 11px;
   height: 38px;
+}
+
+.shop-title-container {
+  padding: 24px 0px;
+  .drawer-wrapper {
+    display: none;
+  }
 }
 
 .dropdown-menu {
@@ -161,6 +194,62 @@ export default {
     height: 37px;
     color: #fff;
     background-color: #414c5d;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .header-wrapper {
+    .top-links-section {
+      display: inline-block;
+      height: 0px;
+      .right-menu {
+        display: block;
+        float: right;
+        color: #24272a;
+      }
+      .shopping-bag {
+        position: absolute;
+        right: 0px;
+        margin-top: 40px;
+        .shopping-cart-icon {
+          font-size: 38px;
+        }
+      }
+    }
+    .shop-title-container {
+      .drawer-wrapper {
+        display: inline-block;
+      }
+    }
+  }
+
+  .content-hover {
+    cursor: pointer;
+    .icon {
+      color: #24272a;
+    }
+  }
+
+  .search-box {
+    margin: 12px;
+    margin-bottom: 0px;
+  }
+
+  .mob-logo {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .header-wrapper {
+    .top-links-section {
+      .shopping-bag {
+        margin-top: 30px;
+      }
+    }
+  }
+  .search-box {
+    margin: 0px 12px;
   }
 }
 </style>
