@@ -64,7 +64,11 @@
           <div class="drawer-wrapper">
             <app-nav-drawer :mainMenus="mainMenus"></app-nav-drawer>
           </div>
-          <div class="roating-item hidden-sm-and-down">UP TO 80% OFF DOORBUSTERS. SHOP</div>
+          <div class="rotaing-banner">
+            <div class="roating-item hidden-sm-and-down text-uppercase">UP TO 80% OFF DOORBUSTERS</div>
+            <div class="roating-item hidden-sm-and-down text-uppercase">Warranty included on all watches.</div>
+            <div class="roating-item hidden-sm-and-down text-uppercase">Extended holiday returns through Jan 15</div>
+          </div>
         </v-flex>
         <v-flex xs6 md4>
           <v-img
@@ -168,12 +172,27 @@ export default {
   color: #24272a;
 }
 
-.roating-item {
-  line-height: 15px;
-  font-size: 12px;
-  color: #D80D0D;
-  text-transform: uppercase;
-  font-weight: 500;
+.rotaing-banner {
+  position:relative;
+  height: 15px;
+  overflow: hidden;
+  .roating-item {
+    position: absolute;
+    line-height: 15px;
+    font-size: 12px;
+    color: #D80D0D;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:nth-child(1) {
+      animation:slide-banner 30s infinite;animation-delay:0s;animation-fill-mode:both;
+    }
+    &:nth-child(2) {
+      animation:slide-banner 30s infinite;animation-delay:10s;animation-fill-mode:both;
+    }
+    &:nth-child(3) {
+      animation:slide-banner 30s infinite;animation-delay:20s;animation-fill-mode:both;
+    }
+  }
 }
 
 .search-box {
@@ -251,6 +270,20 @@ export default {
   .search-box {
     margin: 0px 12px;
   }
+}
+
+@keyframes slide-banner {
+  0%{
+    transform:translateY(-100%);
+    display: none;
+  }
+  3%{transform:translateY(0);}
+  30.33%{transform:translateY(0);}
+  33.33%{
+    transform:translateY(100%);
+    display: none;
+  }
+  100%{transform:translateY(100%);}
 }
 </style>
 
