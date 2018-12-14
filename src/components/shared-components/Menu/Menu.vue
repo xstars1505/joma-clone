@@ -4,37 +4,38 @@
     <v-menu
       offset-y
       open-on-hover
+      text-left
       v-for="mainMenu in mainMenus"
       :key="mainMenu.id"
       class="menu-item hidden-sm-and-down row"
       content-class="menu-item-content"
       close-delay='150'
-      >
-        <div
-          slot="activator"
-          class="title-wrapper pa-3">
-          <div class="title-text">
-            {{ mainMenu.title }}
-          </div>
+    >
+      <div
+        slot="activator"
+        class="title-wrapper pa-3">
+        <div class="title-text">
+          {{ mainMenu.title }}
         </div>
+      </div>
 
-        <v-container py-0>
-          <div class="menu-generic-layout">
-            <app-menu-generic
-              v-for="(menuBlockData, index) in mainMenu.menuBlocks"
-              :key="index"
-              :menuBlockData="menuBlockData"
-              :index="index"/>
-          </div>
-        </v-container>
-      </v-menu>
+      <v-container py-0>
+        <div class="menu-generic-layout">
+          <app-menu-generic
+            v-for="(menuBlockData, index) in mainMenu.menuBlocks"
+            :key="index"
+            :menuBlockData="menuBlockData"
+            :index="index"/>
+        </div>
+      </v-container>
+    </v-menu>
   </div>
 </template>
 <script>
 
-import MenuGeneric from '../shared-components/Menu/MenuGeneric';
-import NavigationDrawer from '../shared-components/Menu/NavigationDrawer';
-import menuData from '../../data-example/main-menu.json';
+import MenuGeneric from './MenuGeneric';
+import NavigationDrawer from './NavigationDrawer';
+import menuData from '../../../data-example/main-menu.json';
 
 export default {
   data: () => ({
