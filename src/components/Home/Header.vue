@@ -7,7 +7,7 @@
             <v-icon class="icon mr-1">forum</v-icon>
             <div>Live chat</div>
           </div>
-          <div class="d-inline-block">CALL US (877) 834-1434 | (212) 924-9925</div>
+          <div class="d-inline-block pl-3">CALL US (877) 834-1434 | (212) 924-9925</div>
         </v-layout>
         <v-layout align-center justify-end class="right-menu">
           <v-menu
