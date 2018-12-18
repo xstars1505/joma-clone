@@ -1,17 +1,11 @@
 <template>
-  <v-app light class="app">
+  <v-app>
     <!--Header-->
     <app-header/>
+    <app-menu/>
 
     <v-content>
-      <div class="text-xs-center"  v-if="isLoading">
-        <v-progress-circular
-          indeterminate
-          color="primary"
-        ></v-progress-circular>
-      </div>
       <router-view></router-view>
-
     </v-content>
 
     <!--Footer-->
@@ -20,27 +14,21 @@
 </template>
 
 <script>
-import Header from './components/shared-components/Header';
+import Header from './components/Home/Header';
+import Menu from './components/shared-components/Menu/Menu';
 import Footer from './components/shared-components/Footer';
 
 export default {
   name: 'App',
   components: {
     'app-header': Header,
+    'app-menu': Menu,
     'app-footer': Footer,
   },
-  data: () => ({
-
-  }),
-  computed: {
-    isLoading() { return this.$store.state.isLoading; },
-  },
+  data: () => ({}),
 };
 </script>
 
 <style lang="scss">
-.app {
-  background-color: #fff !important;
-}
+  @import "assets/styles/main";
 </style>
-

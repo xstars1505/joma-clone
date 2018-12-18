@@ -1,23 +1,13 @@
 <template>
   <div>
     <v-btn @click="load">test</v-btn>
-    <section>
-      <app-header></app-header>
-    </section>
     <!--Carousel-->
     <section>
-      <app-menu></app-menu>
       <app-carousel/>
     </section>
 
     <section>
-      <v-container justify-space-between>
-        <v-layout d-flex justify-center>
-          <v-flex xs12 xl8>
-            <app-feature-daily></app-feature-daily>
-          </v-flex>
-        </v-layout>
-      </v-container>
+      <app-feature-daily />
     </section>
 
     <section>
@@ -84,28 +74,15 @@
 </template>
 
 <script>
-import Header from '../components/Home/Header';
-import Menu from '../components/Home/Menu';
 import Carousel from '../components/Home/Carousel';
 import FeatureDaily from '../components/Home/FeatureDaily';
 import Trending from '../components/Home/Trending';
-import customAxios from '../axios/axios';
 
 export default {
   components: {
-    'app-header': Header,
-    'app-menu': Menu,
     'app-carousel': Carousel,
     'app-feature-daily': FeatureDaily,
     'app-trending': Trending,
-  },
-  methods: {
-    load: () => customAxios.get('https://jsonplaceholder.typicode.com/todos')
-      .then(data => console.log(data)),
-  },
-  mounted() {
-    // customAxios.get('https://jsonplaceholder.typicode.com/todos')
-    //   .then(data => console.log(data));
   },
 };
 

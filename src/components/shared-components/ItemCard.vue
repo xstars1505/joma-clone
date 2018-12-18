@@ -7,7 +7,6 @@
         <v-flex xs12>
           <div class="quick-view has-transition-effect">
             <a class=" has-transition-effect" href="javascript:" id="quickview-product-32060"
-               onclick="quickviewproductid('https://www.jomashop.com/catalog/quickview/main/id/32060/type/simple/');"
                title="Quick View">QUICK VIEW</a>
           </div>
         </v-flex>
@@ -44,6 +43,8 @@ export default {
 
 <style scoped lang="scss">
   .v-card {
+    background-color: inherit;
+
     &:hover {
       cursor: pointer;
     }

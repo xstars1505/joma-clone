@@ -1,7 +1,7 @@
 <template>
   <v-content
     class="my-3 single-layout"
-    v-bind:class="{ 'double-layout': menuBlockData.isDouble }"
+    :class="{ 'double-layout': menuBlockData.isDouble }"
   >
     <div
       class="title font-weight-medium mb-2 text-capitalize body-2"
