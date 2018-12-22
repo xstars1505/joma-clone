@@ -68,7 +68,7 @@
       <v-layout row wrap>
         <v-flex d-flex align-center xs3 md4>
           <div class="drawer-wrapper">
-            <app-nav-drawer :mainMenus="mainMenus"></app-nav-drawer>
+            <app-nav-drawer />
           </div>
           <div class="rotaing-banner">
             <div class="roating-item hidden-sm-and-down text-uppercase">UP TO 80% OFF DOORBUSTERS</div>

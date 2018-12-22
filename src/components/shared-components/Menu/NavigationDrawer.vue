@@ -68,7 +68,6 @@ import menuData from '../../../data-example/main-menu.json';
 
 export default {
   components: { VList },
-  props: ['mainMenus'],
   data: () => ({
     drawer: null,
     ...menuData,
