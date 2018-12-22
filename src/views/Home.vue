@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-btn @click="load">test</v-btn>
     <!--Carousel-->
     <section>
       <app-carousel/>
@@ -73,14 +74,12 @@
 </template>
 
 <script>
-import Menu from '../components/shared-components/Menu/Menu';
 import Carousel from '../components/Home/Carousel';
 import FeatureDaily from '../components/Home/FeatureDaily';
 import Trending from '../components/Home/Trending';
 
 export default {
   components: {
-    'app-menu': Menu,
     'app-carousel': Carousel,
     'app-feature-daily': FeatureDaily,
     'app-trending': Trending,

@@ -1,6 +1,5 @@
 <template>
   <div class="text-md-center nav-menu pa-2" row>
-    <app-nav-drawer :mainMenus="mainMenus"></app-nav-drawer>
     <v-menu
       offset-y
       open-on-hover
