@@ -9,6 +9,7 @@
           </div>
           <div class="d-inline-block pl-3">CALL US (877) 834-1434 | (212) 924-9925</div>
         </v-layout>
+
         <v-layout align-center justify-end class="right-menu">
           <v-menu
             offset-y
@@ -25,16 +26,21 @@
               <v-list-tile>
                 <a href="#" class="dropdown-content-text" pa-0>Login</a>
               </v-list-tile>
+
               <v-divider />
+
               <v-list-tile>
                 <a href="#" class="dropdown-content-text" pa-0>Register</a>
               </v-list-tile>
+
               <v-divider />
+
               <v-list-tile>
                 <a href="#" class="dropdown-content-text" pa-0>Track my order</a>
               </v-list-tile>
             </v-list>
           </v-menu>
+
           <v-menu
             offset-y open-on-hover
             full-width
@@ -44,16 +50,16 @@
             min-width=300
             class="shopping-bag"
           >
-              <div slot="activator" class="content-hover dropdown-menu">
-                <div class="hidden-sm-and-down">My shopping bag (1)</div>
-                <v-icon class="icon shopping-cart-icon ml-2">shopping_cart</v-icon>
-              </div>
-              <v-list>
-                <v-list-tile>
-                  <v-list-tile-title class="caption text-xs-center">There are no items in your bag.</v-list-tile-title>
-                </v-list-tile>
-              </v-list>
-            </v-menu>
+            <div slot="activator" class="content-hover dropdown-menu">
+              <div class="hidden-sm-and-down">My shopping bag (1)</div>
+              <v-icon class="icon shopping-cart-icon ml-2">shopping_cart</v-icon>
+            </div>
+            <v-list>
+              <v-list-tile>
+                <v-list-tile-title class="caption text-xs-center">There are no items in your bag.</v-list-tile-title>
+              </v-list-tile>
+            </v-list>
+          </v-menu>
         </v-layout>
       </v-container>
     </div>
@@ -78,6 +84,7 @@
             contain
             class="hidden-xs-only"
           ></v-img>
+
           <v-img
             src="https://cdn.jomashop.com/skin/frontend/enterprise/joma/images/mob-logo.png"
             aspect-ratio="2"
@@ -89,7 +96,7 @@
         <v-flex d-flex align-center sm12 xs12 md4>
           <div class="search-box pl-1">
             <input type="text" class="search-input"
-              placeholder="Search by brand or model"
+                   placeholder="Search by brand or model"
             >
             <v-icon class="search-icon pa-2">search</v-icon>
           </div>
@@ -231,7 +238,7 @@ export default {
         right: 0px;
         margin-top: 40px;
         .shopping-cart-icon {
-          font-size: 38px;
+          font-size: 3em;
         }
       }
     }

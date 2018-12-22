@@ -106,7 +106,7 @@ export default {
 @media only screen and (max-width: 959px) {
   .toolbar-icon {
     .v-icon {
-      font-size: 38px;
+      font-size: 3em;
     }
   }
 }
