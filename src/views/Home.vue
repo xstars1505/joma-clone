@@ -15,6 +15,10 @@
     </section>
 
     <section>
+      <app-weekly-deal/>
+    </section>
+
+    <section>
       <v-container grid-list-xl>
         <v-layout row wrap justify-center class="my-5">
           <v-flex xs12 sm4>
@@ -77,12 +81,14 @@
 import Carousel from '../components/Home/Carousel';
 import FeatureDaily from '../components/Home/FeatureDaily';
 import Trending from '../components/Home/Trending';
+import WeeklyDeal from '../components/Home/WeeklyDeal';
 
 export default {
   components: {
     'app-carousel': Carousel,
     'app-feature-daily': FeatureDaily,
     'app-trending': Trending,
+    'app-weekly-deal': WeeklyDeal,
   },
 };
 
